@@ -95,9 +95,11 @@ function App() {
                 </p>
               </div>
 
-              <div
+              <a
                 className="polaroid"
-                onClick={() => alert("Open Transaction Tracker")}
+                href="https://github.com/Selmla/TransactionTracker"
+                target="_blank"
+                rel="noreferrer"
               >
                 <img
                   src="/images/transactiontracker.png"
@@ -107,7 +109,7 @@ function App() {
                   <h3>Transaction Tracker</h3>
                   <p>C# console app for tracking income and expenses</p>
                 </div>
-              </div>
+              </a>
 
             </div>
           </div>
@@ -115,21 +117,28 @@ function App() {
           <div className="polaroid-row left">
             <div className="project-item">
 
-              <div
+              {/* POLAROID */}
+              <a
                 className="polaroid"
-                onClick={() => alert("Open Character CV")}
+                href="https://selmla.github.io/cv-site/"
+                target="_blank"
+                rel="noreferrer"
               >
-                <img src="/images/character-cv.png" alt="Character CV project preview" />
+                <img
+                  src="/images/character-cv.png"
+                  alt="Character CV project preview"
+                />
                 <div className="polaroid-caption">
                   <h3>Character CV</h3>
                   <p>Playful retro CV inspired by games</p>
                 </div>
-              </div>
+              </a>
 
+              {/* TEXT */}
               <div className="project-note">
                 <p>
                   A creative CV concept inspired by retro games, combining design,
-                  personality, and playful interaction.
+                  personality, and personality-driven storytelling.
                 </p>
                 <img src="/images/arrow.png" alt="" className="arrow" />
               </div>
