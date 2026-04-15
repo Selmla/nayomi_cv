@@ -1,16 +1,68 @@
-# React + Vite
+# Nayomi Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A small React portfolio built with Vite showcasing a polished hero scene and a project board.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This app renders two main sections:
 
-## React Compiler
+- `HeroScene` — a fullscreen introduction with a desk background, animated steam, and clickable hotspots.
+- `ProjectsSection` — a polished project area with three portfolio cards and descriptive notes.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+All layout and styling live in `src/App.css`, keeping the visual design centralized and simple.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React + Vite app structure
+- Interactive hero screen click state
+- Audio feedback on cup click
+- Responsive layout for desktop and mobile
+- Project cards with external links
+
+## Getting Started
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run locally
+
+```bash
+npm run dev
+```
+
+Open the local Vite URL shown in the terminal to view the site.
+
+### Build for production
+
+```bash
+npm run build
+```
+
+### Preview production build
+
+```bash
+npm run preview
+```
+
+## Project Structure
+
+- `src/App.jsx` — root component that renders `HeroScene` and `ProjectsSection`
+- `src/HeroScene.jsx` — top landing section with background, steam animation, and hotspots
+- `src/ProjectsSection.jsx` — projects section with polaroid-style cards
+- `src/App.css` — all application styling
+- `public/images` — image assets used in the portfolio
+- `public/sounds` — audio asset for the cup interaction
+
+## Dependencies
+
+- `react`
+- `react-dom`
+- `vite`
+- `@vitejs/plugin-react`
+
+## Notes
+
+This project keeps the UI styling unchanged and avoids additional UI libraries. It is intended as a portfolio landing page with simple interactivity and responsive design.
