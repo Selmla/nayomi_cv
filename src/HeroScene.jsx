@@ -32,11 +32,11 @@ export default function HeroScene() {
       <div className="screen-text">
         {isClicked ? (
           <p>
-            Hi, I'm Nayomi. I enjoy turning ideas into real experiences through code and design.
+            Hi, I'm Nayomi. I design, organize, and bring ideas to life through code.
           </p>
         ) : (
           <p>
-            Welcome to Nayomi's portfolio. Click the screen to begin.
+            Welcome to my portfolio. Explore by clicking around.
           </p>
         )}
       </div>
