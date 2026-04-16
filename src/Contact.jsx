@@ -25,7 +25,7 @@ function ContactSection() {
                         <a href="https://github.com/Selmla" target="_blank" rel="noreferrer">
                             GitHub
                         </a>
-                        <a href="https://www.linkedin.com/in/din-linkedin" target="_blank" rel="noreferrer">
+                        <a href="https://www.linkedin.com/in/nayomi-a-b67520ab/" target="_blank" rel="noreferrer">
                             LinkedIn
                         </a>
                     </div>
