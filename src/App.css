@@ -282,7 +282,7 @@ body,
 
   width: clamp(320px, 42vw, 500px);
   flex-shrink: 0;
-  
+
 }
 
 .polaroid:hover {
@@ -338,7 +338,6 @@ body,
   font-family: "Patrick Hand", cursive;
 }
 
-/* liten tejpbit */
 .polaroid::before {
   content: "";
   position: absolute;
@@ -428,11 +427,22 @@ body,
   }
 
   .polaroid-board {
-    gap: 36px;
+    gap: 56px;
   }
 
   .polaroid-row {
-    justify-content: center !important;
+    display: block;
+    width: 100%;
+    justify-content: unset !important;
+  }
+
+  .project-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    max-width: 100%;
+    text-align: center;
   }
 
   .polaroid {
@@ -449,20 +459,29 @@ body,
   .polaroid-caption p {
     font-size: 1rem;
   }
-}
-
-@media (max-width: 600px) {
-  .project-item {
-    flex-direction: column;
-    text-align: center;
-  }
 
   .project-note {
-    max-width: 90%;
+    width: 100%;
+    max-width: 300px;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    align-items: center !important;
+    text-align: center !important;
+    font-size: 1.3rem;
   }
 
   .arrow {
     display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .polaroid-row.right .project-item .polaroid {
+    order: 1;
+  }
+
+  .polaroid-row.right .project-item .project-note {
+    order: 2;
   }
 }
 
