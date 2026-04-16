@@ -26,7 +26,7 @@ export default function ProjectsSection() {
                 One of my first frontend projects where I focused on layout,
                 visual styling, and creating a cozy atmosphere.
               </p>
-              <img src="/images/arrow.png" alt="" className="arrow" />
+              <img src="/images/arrow2.png" alt="" className="arrow" />
             </div>
           </div>
         </div>
@@ -84,7 +84,7 @@ export default function ProjectsSection() {
                 A creative CV concept inspired by retro games, combining design,
                 personality, and personality-driven storytelling.
               </p>
-              <img src="/images/arrow.png" alt="" className="arrow" />
+              <img src="/images/arrow2.png" alt="" className="arrow" />
             </div>
 
           </div>

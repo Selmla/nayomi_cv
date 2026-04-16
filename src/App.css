@@ -7,7 +7,6 @@ body,
   width: 100%;
   min-height: 100%;
   margin: 0;
-  /* background: #f5efe6; */
   background: #403b33;
 }
 
@@ -283,6 +282,7 @@ body,
 
   width: clamp(320px, 42vw, 500px);
   flex-shrink: 0;
+  
 }
 
 .polaroid:hover {
@@ -312,7 +312,7 @@ body,
   object-fit: cover;
   object-position: center;
   border-radius: 2px;
-  background: #bbb5ae;
+  background: #f6efe6;
   padding: 6px;
   box-sizing: border-box;
 }
@@ -393,7 +393,7 @@ body,
   margin-top: 18px;
   margin-left: -110px;
   /* flyttar pilen lite åt vänster från texten */
-  transform: rotate(-35deg);
+  transform: rotate(8deg);
   /* vrider så den pekar mot polaroiden */
 }
 
@@ -468,22 +468,6 @@ body,
 
 /*------Contact section-------*/
 
-/* .contact-section {
-  min-height: 70vh;
-  padding: 100px 24px 120px;
-
-  background-image: url("/images/desk-bg.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  position: relative;
-  overflow: hidden;
-} */
 
 .contact-section {
   min-height: 100vh;
@@ -505,7 +489,7 @@ body,
   top: 0;
   left: 0;
   right: 0;
-  height: 130px;
+  height: 100px;
   background: linear-gradient(to bottom,
       #403b33 0%,
       rgba(64, 59, 51, 0.75) 35%,
@@ -576,4 +560,67 @@ body,
 
 .contact-links a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .contact-section {
+    min-height: auto;
+    padding: 64px 16px 80px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .contact-section h2 {
+    margin-bottom: 32px;
+    font-size: clamp(2.5rem, 10vw, 4rem);
+  }
+
+  .contact-card-wrapper {
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto 28px;
+  }
+
+  .contact-card-image {
+    width: 100%;
+    display: block;
+  }
+
+  .contact-card-overlay {
+    position: static;
+    transform: none;
+    width: 100%;
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+
+    color: #4a3a2a;
+  }
+
+  .contact-card-overlay h3 {
+    font-size: 1.8rem;
+  }
+
+  .contact-role {
+    font-size: 1.2rem;
+  }
+
+  .contact-text {
+    font-size: 1.15rem;
+    line-height: 1.5;
+    max-width: 280px;
+  }
+
+  .contact-links {
+    gap: 10px;
+    align-items: center;
+  }
+
+  .contact-links a {
+    font-size: 1.15rem;
+  }
 }
