@@ -5,6 +5,39 @@ export default function ProjectsSection() {
 
       <div className="polaroid-board">
 
+        <div className="polaroid-row right">
+          <div className="project-item">
+
+            <div className="project-note">
+              <p>
+                The Frequency is an interactive story engine where
+                user choices drive a branching narrative.
+              </p>
+              <p>
+                Built with React and Vite, it uses a data-driven approach
+                where scenes, choices, and flow are defined in JSON.
+              </p>
+            </div>
+
+            <a
+              className="polaroid"
+              href="https://the-frequency-yzbi.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                src="/images/theFrequency.png"
+                alt="The frequency project preview"
+              />
+              <div className="polaroid-caption">
+                <h3>The Frequency</h3>
+                <p>Interactive story engine</p>
+              </div>
+            </a>
+
+          </div>
+        </div>
+
         <div className="polaroid-row left">
           <div className="project-item">
             <a
@@ -82,7 +115,7 @@ export default function ProjectsSection() {
             <div className="project-note">
               <p>
                 A creative CV concept inspired by retro games, combining design,
-                personality, and personality-driven storytelling.
+                personality, and playful storytelling.
               </p>
               <img src="/images/arrow2.png" alt="" className="arrow" />
             </div>
