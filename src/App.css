@@ -240,7 +240,7 @@ body,
   margin: 0 auto;
 }
 
-.project-note p + p {
+.project-note p+p {
   margin-top: 1rem;
 }
 
@@ -290,6 +290,16 @@ body,
 
 }
 
+.wip-sticker {
+  position: absolute;
+  top: -28px;
+  right: -32px;
+  width: 120px;
+  z-index: 10;
+  transform: rotate(10deg);
+  pointer-events: none;
+}
+
 .polaroid:hover {
   box-shadow: 0 16px 32px rgba(0, 0, 0, 0.18);
 }
@@ -310,7 +320,7 @@ body,
   transform: rotate(1deg) translateY(-4px) scale(1.02);
 }
 
-.polaroid img {
+.polaroid > img:not(.wip-sticker) {
   display: block;
   width: 100%;
   aspect-ratio: 4 / 3;

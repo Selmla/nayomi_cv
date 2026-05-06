@@ -26,6 +26,12 @@ export default function ProjectsSection() {
               rel="noreferrer"
             >
               <img
+                className="wip-sticker"
+                src="/images/wip.png"
+                alt="Work in progress"
+              />
+
+              <img
                 src="/images/theFrequency.png"
                 alt="The frequency project preview"
               />
