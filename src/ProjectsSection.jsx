@@ -14,8 +14,8 @@ export default function ProjectsSection() {
                 user choices drive a branching narrative.
               </p>
               <p>
-                Built with React and Vite, it uses a data-driven approach
-                where scenes, choices, and flow are defined in JSON.
+                Built with React, Vite, Node.js, and a custom API layer, it uses
+                a data-driven approach where scenes, choices, and flow are defined in JSON.
               </p>
             </div>
 
