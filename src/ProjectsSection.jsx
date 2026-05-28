@@ -1,133 +1,71 @@
+import ProjectCard from './ProjectCard';
+
 export default function ProjectsSection() {
   return (
     <section className="projects-section">
       <h2>Projects</h2>
 
       <div className="polaroid-board">
+        <ProjectCard
+          title="The Frequency"
+          subtitle="Interactive story engine"
+          image="/images/theFrequency.png"
+          imageAlt="The frequency project preview"
+          direction="right"
+          wip
+          githubUrl="https://github.com/Selmla/the-frequency"
+          demoUrl="https://the-frequency-yzbi.vercel.app/"
+          notes={[
+            'The Frequency is an interactive story engine where user choices drive a branching narrative.',
+            'Built with React, Vite, Node.js, and a custom API layer, it uses a data-driven approach where scenes, choices, and flow are defined in JSON.',
+          ]}
+          stackContent={[
+            'Built with React and Vite for the frontend, using custom CSS for the interactive scrapbook-inspired UI and animations.',
+            'The project also includes a Node.js-powered API layer for loading and managing JSON-based story data and branching narrative flow.',
+          ]}
+          devNotesContent={[
+            'I wanted something I could reuse for creating text stories',
+            'and sharing them. So I built my own "enginge".'
+          ]}
+        />
 
-        <div className="polaroid-row right">
-          <div className="project-item">
+        <ProjectCard
+          title="Munamii Cakery"
+          subtitle="HTML & CSS bakery website"
+          image="/images/cakery.png"
+          imageAlt="Munamii Cakery project preview"
+          direction="left"
+          href="https://selmla.github.io/cakery/index.html"
+          showArrow
+          notes={[
+            'One of my first frontend projects where I focused on layout, visual styling, and creating a cozy atmosphere.',
+          ]}
+        />
 
-            <div className="project-note">
-              <p>
-                The Frequency is an interactive story engine where
-                user choices drive a branching narrative.
-              </p>
-              <p>
-                Built with React, Vite, Node.js, and a custom API layer, it uses
-                a data-driven approach where scenes, choices, and flow are defined in JSON.
-              </p>
-            </div>
+        <ProjectCard
+          title="Transaction Tracker"
+          subtitle="C# console app for tracking income and expenses"
+          image="/images/transactiontracker.png"
+          imageAlt="Transaction Tracker project preview"
+          direction="right"
+          href="https://github.com/Selmla/TransactionTracker"
+          notes={[
+            'A console application built in C# to track income and expenses, focusing on logic, data handling, and clean structure.',
+          ]}
+        />
 
-            <a
-              className="polaroid"
-              href="https://the-frequency-yzbi.vercel.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                className="wip-sticker"
-                src="/images/wip.png"
-                alt="Work in progress"
-              />
-
-              <img
-                src="/images/theFrequency.png"
-                alt="The frequency project preview"
-              />
-              <div className="polaroid-caption">
-                <h3>The Frequency</h3>
-                <p>Interactive story engine</p>
-              </div>
-            </a>
-
-          </div>
-        </div>
-
-        <div className="polaroid-row left">
-          <div className="project-item">
-            <a
-              className="polaroid"
-              href="https://selmla.github.io/cakery/index.html"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src="/images/cakery.png" alt="Munamii Cakery project preview" />
-
-              <div className="polaroid-caption">
-                <h3>Munamii Cakery</h3>
-                <p>HTML & CSS bakery website</p>
-              </div>
-            </a>
-
-            <div className="project-note">
-              <p>
-                One of my first frontend projects where I focused on layout,
-                visual styling, and creating a cozy atmosphere.
-              </p>
-              <img src="/images/arrow2.png" alt="" className="arrow" />
-            </div>
-          </div>
-        </div>
-
-        <div className="polaroid-row right">
-          <div className="project-item">
-
-            <div className="project-note">
-              <p>
-                A console application built in C# to track income and expenses,
-                focusing on logic, data handling, and clean structure.
-              </p>
-            </div>
-
-            <a
-              className="polaroid"
-              href="https://github.com/Selmla/TransactionTracker"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src="/images/transactiontracker.png"
-                alt="Transaction Tracker project preview"
-              />
-              <div className="polaroid-caption">
-                <h3>Transaction Tracker</h3>
-                <p>C# console app for tracking income and expenses</p>
-              </div>
-            </a>
-
-          </div>
-        </div>
-
-        <div className="polaroid-row left">
-          <div className="project-item">
-
-            <a
-              className="polaroid"
-              href="https://selmla.github.io/cv-site/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src="/images/character-cv.png"
-                alt="Character CV project preview"
-              />
-              <div className="polaroid-caption">
-                <h3>Character CV</h3>
-                <p>Playful retro CV inspired by games</p>
-              </div>
-            </a>
-
-            <div className="project-note">
-              <p>
-                A creative CV concept inspired by retro games, combining design,
-                personality, and playful storytelling.
-              </p>
-              <img src="/images/arrow2.png" alt="" className="arrow" />
-            </div>
-
-          </div>
-        </div>
+        <ProjectCard
+          title="Character CV"
+          subtitle="Playful retro CV inspired by games"
+          image="/images/character-cv.png"
+          imageAlt="Character CV project preview"
+          direction="left"
+          href="https://selmla.github.io/cv-site/"
+          showArrow
+          notes={[
+            'A creative CV concept inspired by retro games, combining design, personality, and playful storytelling.',
+          ]}
+        />
       </div>
     </section>
   );
