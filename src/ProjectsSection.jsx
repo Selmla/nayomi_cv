@@ -30,15 +30,26 @@ export default function ProjectsSection() {
         />
 
         <ProjectCard
-          title="Munamii Cakery"
-          subtitle="HTML & CSS bakery website"
-          image="/images/cakery.png"
-          imageAlt="Munamii Cakery project preview"
+          title="TimeTraveler"
+          subtitle="Trip timeline & deadline planning assistant"
+          image="/images/timetraveler.jpg"
+          imageAlt="TimeTraveler app preview"
           direction="left"
-          href="https://selmla.github.io/cakery/index.html"
+          wip
           showArrow
+          githubUrl="https://github.com/Selmla/time-traveler"
           notes={[
-            'One of my first frontend projects where I focused on layout, visual styling, and creating a cozy atmosphere.',
+            'Built to solve a real gap in travel tools — Google Maps handles navigation, but nothing helps you reason about whether your whole day still holds together when plans shift.',
+            'Integrates with the Google Maps API for live ETA data, with a local-first architecture built around deadlines, buffers, and real-time timeline recalculations.',
+          ]}
+          stackContent={[
+            'Frontend built with React + Vite and Tailwind CSS.',
+            'Integrates with the Google Maps API for live navigation data and ETA calculations.',
+            'Local-first architecture with timeline-based logic — all recalculations happen on the client, keeping the experience fast and responsive.',
+          ]}
+          devNotesContent={[
+            'The idea came from genuine frustration: every travel planner I tried could navigate between stops, but none could answer "does my whole day still work?" when something changes.',
+            "I wanted to explore timeline logic, deadline reasoning, and what it actually feels like to build something useful to me. It's also been my first serious experiment with AI-assisted development — using it to prototype and iterate faster than I ever have before.",
           ]}
         />
 
