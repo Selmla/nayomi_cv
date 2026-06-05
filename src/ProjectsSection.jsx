@@ -7,6 +7,30 @@ export default function ProjectsSection() {
 
       <div className="polaroid-board">
         <ProjectCard
+          title="Ride & Read"
+          subtitle="Private date-invitation app"
+          image="/images/date.png"
+          imageAlt="Ride & Read app preview"
+          direction="left"
+          showArrow
+          githubUrl="https://github.com/Selmla/RideAndRead"
+          demoUrl="https://ride-and-read.vercel.app/"
+          notes={[
+            "A date-request app built around a fun idea from social media — asking someone out without the awkward part. The sender picks dates and activities, the recipient chooses what they're in for, and you both find out at the same time.",
+          ]}
+          stackContent={[
+            'Built with React 19 and Vite.',
+            "Firebase Firestore handles real-time invitation state — both screens update instantly the moment the recipient taps 'I'm in'.",
+            'No accounts, no personal data stored. The app is intentionally minimal — just an invitation, a choice, and a confirmed plan.',
+            'Deployed on Vercel.',
+          ]}
+          devNotesContent={[
+            "The idea came from social media — and a very real feeling. Asking someone out can be awkward, especially if you're not sure they feel the same way.",
+            "I wanted to build something that takes the pressure off both sides. You put in the effort of crafting an invitation, they get to say yes on their own terms, and neither of you has to sit through an uncomfortable moment.",
+          ]}
+        />
+
+        <ProjectCard
           title="The Frequency"
           subtitle="Interactive story engine"
           image="/images/theFrequency.png"
